@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondpage">
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:background="@null"
+        android:src="@drawable/left" />
+
+
+    <EditText
+        android:id="@+id/queryET"
+        android:layout_width="309dp"
+        android:layout_height="56dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/default_query"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/getWeatherTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backButton"
+        android:layout_centerInParent="true"
+        android:text="@string/get_weather"
+        android:textColor="#f1c40f"
+        android:textSize="50sp" />
+
+
+</RelativeLayout>
